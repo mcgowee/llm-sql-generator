@@ -1,0 +1,6 @@
+# requirements.txt
+openai
+sqlalchemy
+psycopg2
+pandas
+python-dotenv

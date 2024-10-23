@@ -1,0 +1,24 @@
+# Ignore environment files containing sensitive information
+.env
+
+# Ignore PyCharm project settings
+.idea/
+
+# Ignore Python bytecode and caches
+__pycache__/
+*.pyc
+
+# Ignore virtual environment (if present)
+venv/
+.venv/
+
+# Ignore venvScriptsactivate folder
+venvScriptsactivate/
+
+# Ignore logs and temporary files (optional)
+*.log
+
+# Optional: Ignore environment files and OS-specific files
+*.env
+.DS_Store
+Thumbs.db

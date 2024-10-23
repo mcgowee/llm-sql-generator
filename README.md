@@ -13,6 +13,7 @@ This project generates SQL queries using a Large Language Model (LLM) based on n
 ### 1. Download and Extract the Project
 1. Download the provided project ZIP file.
 2. Extract the contents to a folder on your computer.
+3. It is recommended to create a virtual environment in the next set of instructions.
 
 ### 2. Create and Activate a Virtual Environment
 
@@ -26,12 +27,12 @@ This project generates SQL queries using a Large Language Model (LLM) based on n
 
    On Command Prompt:
    ```
-   env\Scripts\Activate.ps1
+   venv\Scripts\Activate
    ```
 
    On Windows (PowerShell):
    ```
-   .\venv\Scripts\Activate.ps1
+   .\venv\Scripts\Activate
    ```
 
 #### On Linux or WSL:
@@ -46,33 +47,28 @@ This project generates SQL queries using a Large Language Model (LLM) based on n
    ```
 
 ### 3. Install Dependencies
-Once the virtual environment is activated, install the necessary Python packages:
+Install the necessary Python packages:
 ```
 pip install -r requirements.txt
 ```
 
 ### 4. Configure the OpenAI API Key
-To use the LLM features, you must provide an OpenAI API key.
+An OpenAI API key has been provided for this assighmnet, but will expire after a certain time.
+This temporary API key is in the .env file.
+Follow the instructions below to use your own OpenAI API Key.
 
-1. Create a `.env` file in the root directory of the project (where `main.py` is located).
-2. Add the following line to the `.env` file:
+#### Add your own API key to the .env File
+1. Open the `.env` file and replace the placeholder with your API key:
    ```
    OPENAI_API_KEY=your_openai_api_key_here
    ```
-3. Replace `your_openai_api_key_here` with your actual OpenAI API key.
 
-**Note:** This API key is temporary and will be deactivated on [insert expiration date]. Make sure to test the project before that time.
+**Note:** The current API key is temporary and will be deactivated.
 
 ### 5. Running the Project
 Make sure you are in the project directory, then run the program:
 ```
 python main.py
-```
-
-### 6. Deactivate the Virtual Environment
-When you are done, deactivate the virtual environment:
-```
-deactivate
 ```
 
 ## Notes
